@@ -1,0 +1,188 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Search";
+}
+@* <h1>@ViewData["Title"]</h1> *@
+
+
+<div class="card">
+  <div class="card-body">
+     <div class="container">
+         <div class="row align-item-start">
+            <div class="col">
+                <label for="objectType" class="form-label"> <strong> Object Type</strong></label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>delivery_note</option>
+                    <option value="1"> delivery_note 1</option>
+                    <option value="2"> delivery_note 2</option>
+                    <option value="3">delivery_note 3</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="propertyType" class="form-label"> <strong> Property</strong></label>
+                 <select class="form-select" aria-label="Default select example">
+                    <option selected>Property 1</option>
+                    <option value="1"> Property 2</option>
+                    <option value="2"> Property 3</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="operatorType" class="form-label"> <strong> Operator</strong></label>
+                 <select class="form-select" aria-label="Default select example">
+                    <option selected>Equal 1</option>
+                    <option value="1"> Equal 2</option>
+                    <option value="2"> Equal 3</option>
+                 </select>
+            </div>
+            <div class="col">
+                    <label for="valueType" class="form-label"> <strong> Value</strong></label>
+                     <select class="form-select" aria-label="Default select example">
+                        <option selected> Property Value</option>
+                        <option value="1"> Value 2</option>
+                        <option value="2"> Value 3</option>
+                     </select>
+            </div>
+             <div class="col">
+                    <label for="valueType" class="form-label"> <strong> Join</strong></label>
+                     <select class="form-select" aria-label="Default select example">
+                        <option selected> AND</option>
+                        <option value="1"> OR</option>
+                        <option value="2"> OR 2</option>
+                     </select>
+            </div>
+            <div class="col">
+             <p >.</p>
+             <p> <i class="bi bi-plus-lg"></i></p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-5">
+                  <input type="text" class="form-control" id="customerName" placeholder="customerName:'Udit Malik' ">
+            </div>
+            <div class="col-2 mr-1">
+                 <button type="submit" class="form-control btn btn-outline-secondary text-dark"> <i class="bi bi-search"></i> Search</button>
+            </div>
+            <div class=" col-2">
+                 <button type="submit" class="form-control btn btn-outline-secondary text-dark"> <i class="bi bi-search"></i> Reset</button>
+            </div>
+        
+         </div>
+     </div>
+  </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+         <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <button type="submit" class="form-control btn btn-outline-secondary text-dark"> <i class="bi bi-search"></i> Delete</button>
+                </div>
+                <div class=" col-2">
+                    <button type="submit" class="form-control btn btn-outline-secondary text-dark"> <i class="bi bi-search"></i> Export</button>
+                </div>
+            </div>
+              <div class="card mt-4">
+                    <div class="card-body">
+                         <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"> 
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            </th>
+                            <th scope="col">Distribution Order Id</th>
+                            <th scope="col">Shipping Id</th>
+                            <th scope="col">File Name</th>
+                            <th scope="col">Carier Name</th>
+                            <th scope="col">Creation Date</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                            <td>678865789765</td>
+                            <td>1314566</td>
+                            <td> application/csv</td>
+                            <td> My Carier</td>
+                            <td> Udit Mark</td>
+                            <td> Wed Oct 20  11:30 IST</td>
+                            <td> US</td>
+                            <td> 75645454545454545.csv</td>
+                            <td> Document created from migration</td>
+                            <td> <i class="bi bi-three-dots"></i> </td>
+                        </tr>
+
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                            <td>678865789765</td>
+                            <td>1314566</td>
+                            <td> application/csv</td>
+                            <td> My Carier</td>
+                            <td> Udit Mark</td>
+                            <td> Wed Oct 20  11:30 IST</td>
+                            <td> US</td>
+                            <td> 75645454545454545.csv</td>
+                            <td> Document created from migration</td>
+                            <td> <i class="bi bi-three-dots"></i> </td>
+                        </tr>
+
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                            <td>678865789765</td>
+                            <td>1314566</td>
+                            <td> application/csv</td>
+                            <td> My Carier</td>
+                            <td> Udit Mark</td>
+                            <td> Wed Oct 20  11:30 IST</td>
+                            <td> US</td>
+                            <td> 75645454545454545.csv</td>
+                            <td> Document created from migration</td>
+                            <td> <i class="bi bi-three-dots"></i> </td>
+                        </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                            <td>678865789765</td>
+                            <td>1314566</td>
+                            <td> application/csv</td>
+                            <td> My Carier</td>
+                            <td> Udit Mark</td>
+                            <td> Wed Oct 20  11:30 IST</td>
+                            <td> US</td>
+                            <td> 75645454545454545.csv</td>
+                            <td> Document created from migration</td>
+                            <td> <i class="bi bi-three-dots"></i> </td>
+                        </tr>
+                          <tr>
+                            <th scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                            <td>678865789765</td>
+                            <td>1314566</td>
+                            <td> application/csv</td>
+                            <td> My Carier</td>
+                            <td> Udit Mark</td>
+                            <td> Wed Oct 20  11:30 IST</td>
+                            <td> US</td>
+                            <td> 75645454545454545.csv</td>
+                            <td> Document created from migration</td>
+                            <td> <i class="bi bi-three-dots"></i> </td>
+                        </tr>
+                       
+                       
+                    </tbody>
+                </table>
+                    </div>
+              </div>
+               
+
+         </div>
+    </div>
+</div>

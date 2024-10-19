@@ -1,0 +1,16 @@
+.my-bg-color {
+    background-color: #43177F;
+    color: white !important;
+}
+
+.my-text-white{
+    color: white !important;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+my-bold-text{
+    font-weight: bolder;
+}
